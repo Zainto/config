@@ -13,8 +13,8 @@ TF_PATH=$HOME/.tfenv/bin
 SNAP_PATH=/snap/bin
 GO_PATH=/usr/local/go/bin:$HOME/.go
 BASE_PATH=/usr/local/sbin:/usr/local/bin:$(getconf PATH)
+SNAP_PATH=/snap/bin
 
-export GOPATH=$HOME/.go
 export PATH=$LUA_PATH:$RUST_PATH:$BREW_PATH:$LOCAL_PATH:$SNAP_PATH:$GO_PATH:$TF_PATH:$BASE_PATH
 
 ZSH_THEME=personal
