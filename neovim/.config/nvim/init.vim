@@ -6,7 +6,7 @@
 "    By: cempassi <cempassi@student.42.fr>          +#+  +:+       +#+         "
 "                                                 +#+#+#+#+#+   +#+            "
 "    Created: 2020/07/26 21:26:49 by cempassi          #+#    #+#              "
-"    Updated: 2021/03/13 17:28:23 by cempassi         ###   ########.fr        "
+"    Updated: 2021/06/26 18:17:34 by cempassi         ###   ########.fr        "
 "                                                                              "
 " **************************************************************************** "
 
@@ -73,7 +73,7 @@ let g:terminal_color_7 = '#E5E9F0'
 "" Plugin Management
 lua require('init')
 lua require('plugins')
-lua require'colorizer'.setup()
+"lua require'colorizer'.setup()
 
 "Save all the files, all the times
 augroup save
@@ -229,4 +229,3 @@ nnoremap <silent> <leader>B :lua require'dap'.set_breakpoint(vim.fn.input('Break
 nnoremap <silent> <leader>lp :lua require'dap'.set_breakpoint(nil, nil, vim.fn.input('Log point message: '))<CR>
 nnoremap <silent> <leader>dr :lua require'dap'.repl.open()<CR>
 nnoremap <silent> <leader>dl :lua require'dap'.repl.run_last()<CR>
-

@@ -32,6 +32,9 @@ lspconfig.bashls.setup{
 
 lspconfig.yamlls.setup{
   on_attach = custom_on_attach,
+  on_init = custom_on_init,
+  capabilities = capabilites,
+  root_dir = vim.loop.cwd,
   settings = {
     yaml = {
       schemaStore = {
