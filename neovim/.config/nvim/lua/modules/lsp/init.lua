@@ -1,14 +1,13 @@
 vim.cmd[[packadd nvim-lspconfig]]
 vim.cmd[[packadd lspsaga.nvim]]
 
-local api = vim.api
 local lspconfig = require("lspconfig")
 local mappings = require("modules.lsp._mappings")
 
 require("modules.lsp._diagnostic") -- diagnostic stuff
 
 require"lspsaga".init_lsp_saga({
-  border_style = 1,
+  border_style = "single",
 }) -- initialise lspsaga UI
 
 local custom_on_attach = function(client, bufnr)
@@ -18,7 +17,6 @@ local custom_on_attach = function(client, bufnr)
     client.config.flags.allow_incremental_sync = true
   end
 
-  --api.nvim_buf_set_option(bufnr, "omnifunc", "v:lua.vim.lsp.omnifunc")
 end
 
 local custom_on_init = function()
