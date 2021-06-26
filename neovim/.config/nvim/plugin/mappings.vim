@@ -206,8 +206,10 @@ nmap <leader>ss :SSave!<cr>
 
 " AsyncTask 
 nnoremap <silent><leader>mk :AsyncTask build<cr>
+nnoremap <silent><leader>mK :AsyncTask debug<cr>
 nnoremap <silent><leader>mc :AsyncTask clean<cr>
 nnoremap <silent><leader>mr :AsyncTask run<cr>
+nnoremap <silent><leader>mR :AsyncTask run-debug<cr>
 nnoremap <silent><leader>mt :AsyncTask test<cr>
 nnoremap <silent><leader>me :AsyncTask -e<cr><cr>
 nnoremap <silent><leader>mE :AsyncTask -E<cr><cr>
