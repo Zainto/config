@@ -145,35 +145,35 @@ lspconfig.clangd.setup({
   },
 })
 
-local sumneko_root = os.getenv("HOME") .. "/Applications/lua-language-server"
-lspconfig.sumneko_lua.setup{
-  cmd = {
-    sumneko_root
-    .. "/bin/macOS/lua-language-server", "-E",
-    sumneko_root .. "/main.lua"
-  },
-  on_attach = custom_on_attach,
-  on_init = custom_on_init,
-  settings = {
-    Lua = {
-      runtime = { version = "LuaJIT", path = vim.split(package.path, ";"), },
-      diagnostics = {
-        enable = true,
-        globals = {
-          "vim", "describe", "it", "before_each", "after_each",
-          "awesome", "theme", "client", "P", "use"
-        },
-        workspace = {
-        -- Make the server aware of Neovim runtime files
-        library = {
-          [vim.fn.expand('$VIMRUNTIME/lua')] = true,
-          [vim.fn.expand('$VIMRUNTIME/lua/vim/lsp')] = true,
-        },
-      },
-    }
-  }
-  }
-}
+-- local sumneko_root = os.getenv("HOME") .. "/Applications/lua-language-server"
+-- lspconfig.sumneko_lua.setup{
+--   cmd = {
+--     sumneko_root
+--     .. "/bin/macOS/lua-language-server", "-E",
+--     sumneko_root .. "/main.lua"
+--   },
+--   on_attach = custom_on_attach,
+--   on_init = custom_on_init,
+--   settings = {
+--     Lua = {
+--       runtime = { version = "LuaJIT", path = vim.split(package.path, ";"), },
+--       diagnostics = {
+--         enable = true,
+--         globals = {
+--           "vim", "describe", "it", "before_each", "after_each",
+--           "awesome", "theme", "client", "P", "use"
+--         },
+--         workspace = {
+--         -- Make the server aware of Neovim runtime files
+--         library = {
+--           [vim.fn.expand('$VIMRUNTIME/lua')] = true,
+--           [vim.fn.expand('$VIMRUNTIME/lua/vim/lsp')] = true,
+--         },
+--       },
+--     }
+--   }
+--   }
+-- }
 
 require'lspconfig'.pyright.setup{
   on_attach = custom_on_attach,
