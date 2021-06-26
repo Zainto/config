@@ -4,7 +4,7 @@ local actions = require('telescope.actions')
 require('telescope').setup {
   defaults = {
     file_previewer = require('telescope.previewers').vim_buffer_cat.new,
-    layout_strategy = "center",
+    layout_strategy = "horizontal",
     git_icons = {added = "☺", changed = "ƣ", deleted = "ㄐ"},
     mappings = {
 	i = {
