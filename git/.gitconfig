@@ -34,6 +34,7 @@
 [alias]
 
 	ls = log -n 20 --relative-date --graph --abbrev-commit --decorate
+    tree = log --all --graph --date=relative --pretty=format:'%C(auto,yellow)[%h][%ad]%C(auto,white) %s %C(auto, blue)%d %C(auto,red)[%an]' 
 
 [color "branch"]
 
@@ -58,7 +59,6 @@
 
 [gpg]
 	program = /usr/local/MacGPG2/bin/gpg2
-[url "git@github.com:"]
-	insteadOf = https://github.com/
+
 [push]
 	default = current
