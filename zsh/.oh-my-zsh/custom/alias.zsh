@@ -23,3 +23,7 @@ alias uconf=~/.config/update_config.sh
 alias cat=bat
 
 alias dvim="nvim --cmd \"set rtp+=$PWD\""
+
+alias clang=clang-12
+
+alias clangd=clangd-12

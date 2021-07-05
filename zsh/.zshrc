@@ -10,11 +10,12 @@ RUST_PATH=$HOME/.cargo/bin
 BREW_PATH=$HOME/.brew/bin
 LOCAL_PATH=$HOME/Applications/bin
 TF_PATH=$HOME/.tfenv/bin
+PYTHON_PATH=$HOME/.pyenv/shims
 SNAP_PATH=/snap/bin
 GO_PATH=/usr/local/go/bin:$HOME/.go
 BASE_PATH=/usr/local/sbin:/usr/local/bin:$(getconf PATH)
 
-export PATH=$LUA_PATH:$RUST_PATH:$BREW_PATH:$LOCAL_PATH:$SNAP_PATH:$GO_PATH:$TF_PATH:$BASE_PATH
+export PATH=$PYTHON_PATH:$LUA_PATH:$RUST_PATH:$BREW_PATH:$LOCAL_PATH:$SNAP_PATH:$GO_PATH:$TF_PATH:$BASE_PATH
 
 ZSH_THEME=personal
 
