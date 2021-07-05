@@ -6,7 +6,7 @@
 "    By: cempassi <cempassi@student.42.fr>          +#+  +:+       +#+         "
 "                                                 +#+#+#+#+#+   +#+            "
 "    Created: 2020/07/26 21:26:49 by cempassi          #+#    #+#              "
-"    Updated: 2021/06/26 18:17:34 by cempassi         ###   ########.fr        "
+"    Updated: 2021/07/05 16:51:03 by cempassi         ###   ########.fr        "
 "                                                                              "
 " **************************************************************************** "
 
@@ -54,6 +54,7 @@ set guicursor=
 filetype plugin indent on
 syntax on 
 
+color default
 set guifont=Hasklig\ Light:h15
 set termguicolors
 colorscheme deep-sea

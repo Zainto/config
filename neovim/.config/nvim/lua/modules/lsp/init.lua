@@ -134,7 +134,7 @@ lspconfig.clangd.setup({
   on_init = custom_on_init,
   capabilities = capabilities,
   cmd = {
-    "/usr/local/Cellar/llvm/11.0.1/bin/clangd",
+    "/usr/bin/clangd",
     "--background-index",
     "--suggest-missing-includes",
     "--clang-tidy",
